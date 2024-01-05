@@ -51,7 +51,7 @@
       <!-- Navigation -->
        <nav class="navbar navbar-expand-lg py-lg-2">
         <div class="container">
-          <a class="navbar-brand text-expanded" href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a class="navbar-brand text-expanded" href="myactivity.html"><i class="fas fa-home"></i> Home</a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,10 +64,13 @@
                 <span class="nav-link text-expanded">|</span>
               </li>
               <li class="nav-item px-lg-3">
-                <a class="nav-link text-expanded" href="aboutthebowls_signedout.html">About the Bowls</a>
+                <a class="nav-link text-expanded" href="aboutthebowls_signedin.html">About the Bowls</a>
               </li>
               <li class="nav-item px-lg-3">
-                <a class="nav-link text-expanded js-scroll-trigger" href="#signin"><i class="far fa-user-circle"></i> Sign In</a>
+                <a class="nav-link text-expanded" href="my-account.html">My Account</a>
+              </li>
+              <li class="nav-item px-lg-3">
+                <a class="nav-link text-expanded js-scroll-trigger" href="index.html"><i class="far fa-user-circle"></i> Sign Out</a>
               </li>
             </ul>
           </div>
@@ -85,97 +88,49 @@
     <!--END HEADER -->
 
     <!--START BODY -->
-    <!-- Buy Snap Get Section -->
-    <section class="text-center">
+    <!-- Submit Receipts -->
+    <section class=" mb-5 pb-3">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 py-4">
-            <h1 class="d-none d-sm-block">-&nbsp;Getting your bowl is deliciously simple!&nbsp;-</h1>
-            <h1 class="d-sm-none">Getting your bowl is deliciously simple!</h1>
+          <div class="col-sm-12 pt-4 text-center">
+            <h1>- Submit Receipt -</h1>
+            <p>Submit valid receipts for 3 Sabra products (7 oz. or larger) in order to select your bowl.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 pb-4">
-              <img src="images/buy.png" class="img-fluid" alt="Buy">
-              <div class="container">
-                <h2>- buy -</h2>
-                <p class="card-text">Purchase any 3 Sabra products (7 oz. or larger) before 8/31/18.</p>
-            </div>
+          <div class="col-sm-8 text-center receipt mx-auto">
+              <p>Before you upload your receipt please confirm the image clearly displays:
+              <br />
+              <br />
+              <span style="font-family: Nexa-Bold;">Date of purchase
+              <br />
+              Retailer name
+              <br />
+              Eligible items purchased are circled
+              <br />
+              Receipt total</span></p>
           </div>
-          <div class="col-md-4">
-              <img src="images/snap.png" class="img-fluid" alt="Snap">
-              <div class="container">
-                <h2>- snap -</h2>
-                <p class="card-text">Upload a photo of your receipt(s).</p> 
-            </div>
-          </div>
-          <div class="col-md-4">
-              <img src="images/get.png" class="img-fluid" alt="Get">
-              <div class="container">
-                <h2>- get -</h2>
-                <p class="card-text">Pick from a variety of <br />bowl designs.</p> 
+          <div class="col-sm-12 pt-4 text-center">
+               <p>Please enter the purchase date from your receipt below and upload your receipt image.</p>
+               <div class="col-md-6 mx-auto">
+             <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Purchase Date<span class="text-alert">*</span></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="MM/DD/YYYY">
               </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-
-    <!-- Login Information -->
-    <section class="text-center py-5">
-      <div class="container">
-        <div class="row">
-          <div id="signin" class="col-md-6 text-center login-left">
-            <img src="images/sign-up.png" class="img-fluid" alt="Dont have an account?" />
-            <h2 class="pt-3">- don't have an account? -</h2>
-            <a class="btn btn-primary" href="create-account.html" role="button">Create Account</a>
-          </div>
-          <div class="col-md-6 login-right">
-            <div class="row">
-              <div class="col-sm-8 mx-auto">
-                <!--LOGIN -->
-                  <form>
-                    <h3>- Sign In -</h3>
-                    <p>*required fields</p> 
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address<span class="text-danger">*</span></label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password<span class="text-danger">*</span></label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                     <a class="btn btn-primary" href="myactivity.html" role="button">Sign In</a>
-                    <div class="link pt-3">
-                      <a href="forgot-password.html" alt="Forgot Password?">Forgot password?</a>
-                    </div>
-                  </form>
-                <!--LOGIN -->
+              <p class="text-center">You may upload a PDF, JPG, or PNG image. Please make sure your receipt image does not exceed 5MB and is clear and legible.</p>
+              <div class="mx-auto text-center mb-5">
+                <a class="btn btn-secondary" href="#" role="button"><i class="fas fa-upload"></i> UPLOAD RECEIPT</a><br />
+                <br />
+                <a class="btn btn-primary" href="myactivity_one.html" role="button">SUBMIT RECEIPT</a>
               </div>
-            </div>
+             </form>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About The Bowls -->
-    <section class="text-center mt-3 mb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center pt-lg-5">
-            <h1>- About the bowls -</h1>
-            <p>Choose from 8 custom bowl designs crafted to perfectly fit Sabra&nbsp;Hummus tubs. Handmade by U.S. artists, each bowl&nbsp;brings&nbsp;a&nbsp;fresh&nbsp;look&nbsp;to&nbsp;the table.</p>
-            <span class="link"><a href="aboutthebowls_signedout.html">SEE THEM ALL <i class="fas fa-chevron-circle-right"></i></a></span>
-          </div>
-          <div class="col-md-6 text-center pt-5 pt-md-0">
-            <img src="images/bowls.png" class="img-fluid h-100" alt="About the Bowls">
           </div>
         </div>
       </div>
     </section>
     <!--END BODY -->
 
-   <!-- START FOOTER -->
+ <!-- START FOOTER -->
     <!-- Wobbly Footer -->
     <div class="container-fluid">
       <div class="row padding-0">
